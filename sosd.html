@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOSD Lab 2026秋季纳新</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Microsoft YaHei", sans-serif;
+    }
+
+    body {
+      background-color: #0f172a;
+    }
+
+    /* 导航栏 */
+    nav {
+      background-color: #1e293b;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav .logo {
+      color: #3b82f6;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    /* 导航 */
+    nav a:hover {
+      color: #3b82f6;
+    }
+
+    /* 首屏 */
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background-color: #0f172a;
+    }
+
+    .hero h1 {
+      font-size: 40px;
+      color: #60a5fa;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #94a3b8;
+      margin-bottom: 30px;
+    }
+
+    /* 按钮 */
+    .btn {
+      display: inline-block;
+      padding: 10px 25px;
+      background-color: #3b82f6;
+      color: white;
+      text-decoration: none;
+      border-radius: 20px;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #2563eb;
+    }
+
+    /* 通用容器 */
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 40px;
+      color: #3b82f6;
+    }
+
+    /* 关于我们 文本样式 */
+    .about-text {
+      text-align: center;
+      color: #94a3b8;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* 团队卡片 */
+    .teams {
+      text-align: center;
+    }
+
+    .team-card {
+      display: inline-block;
+      width: 30%;
+      background-color: #1e293b;
+      padding: 20px;
+      margin: 1%;
+      border-radius: 8px;
+      vertical-align: top;
+      text-align: left;
+      border: 1px solid #334155;
+    }
+
+    .team-card h3 {
+      color: #60a5fa;
+      margin-bottom: 10px;
+    }
+
+    .team-card p {
+      font-size: 14px;
+      color: #94a3b8;
+    }
+
+    /* 数据展示 */
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      background-color: #1e293b;
+      padding: 30px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .stats h4 {
+      font-size: 32px;
+      color: #3b82f6;
+    }
+
+    .stats p {
+      font-size: 14px;
+      color: #94a3b8;
+    }
+
+    /* 页脚 */
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #94a3b8;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- 导航 -->
+  <nav>
+    <div class="logo">SOSD LAB</div>
+    <div>
+      <a href=" ">关于我们</a>
+      <a href="#teams">团队架构</a>
+    </div>
+  </nav>
+
+  <!-- 首屏 -->
+  <div class="hero">
+    <h1>在秋天入场，在探索中发光</h1>
+    <p>福州大学服务外包与软件设计实验室<br>2026 秋季纳新启动</p>
+    <a href="#teams" class="btn">了解详情</a>
+  </div>
+
+  <!-- 关于我们 -->
+  <div class="container" id="about">
+    <h2 class="title">关于我们</h2>
+    <p class="about-text">
+      福州大学服务外包与软件设计实验室 (SOSD Lab) 成立于 2013 年。我们通过技术公开课、项目迭代和开发竞赛，培养你的实战能力。在这里，提升团队协作与综合实力！
+    </p>
+  </div>
+
+  <!-- 团队架构 (删掉了那个局部的背景色) -->
+  <div class="container" id="teams">
+    <h2 class="title">团队架构</h2>
+
+    <div class="teams">
+      <!-- 卡片1 -->
+      <div class="team-card">
+        <h3>技术创新组</h3>
+        <p>聚焦软件开发、项目落地。参与外包项目积累实战经验。涵盖 Web前端、小程序、Android 等。</p>
+      </div>
+      <!-- 卡片2 -->
+      <div class="team-card">
+        <h3>产品创新组</h3>
+        <p>参与需求分析、原型设计、UI设计。连接需求、技术与美学。使用 Figma、PR 等工具。</p>
+      </div>
+      <!-- 卡片3 -->
+      <div class="team-card">
+        <h3>科研创新组</h3>
+        <p>聚焦人工智能与自然语言处理。开展科研开源项目、论文研讨。主要使用 Python 和 PyTorch。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 数据 -->
+  <div class="container">
+    <h2 class="title">荣誉与未来</h2>
+    <div class="stats">
+      <div>
+        <h4>91+</h4>
+        <p>国家级奖项</p>
+      </div>
+      <div>
+        <h4>217+</h4>
+        <p>省部级奖项</p>
+      </div>
+      <div>
+        <h4>60+</h4>
+        <p>知名企业就业</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 页脚 -->
+  <footer>
+    <p>2026 SOSD Lab 福州大学服务外包与软件设计实验室</p>
+  </footer>
+
+</body>
+
+</html>
