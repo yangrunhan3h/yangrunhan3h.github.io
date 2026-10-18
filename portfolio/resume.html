@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>杨润涵 技术创新组</title>
+
+  <style>
+    body {
+      background-color: #f7f7f7;
+      color: #333;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.8;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .paper {
+      max-width: 700px;
+      background-color: #fff;
+      padding: 50px;
+      border-radius: 4px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    /* 荧光笔 */
+    .marker {
+      background-color: #fff3bf;
+      font-weight: bold;
+    }
+
+    .subtitle {
+      padding-bottom: 20px;
+      border-bottom: 1px solid #eee;
+    }
+
+    /* 小方块 */
+    h2::before {
+      content: "";
+      display: inline-block;
+      width: 6px;
+      height: 18px;
+      background-color: #faeb4a;
+      margin-right: 10px;
+      border-radius: 2px;
+    }
+
+    .btn {
+      background-color: #333;
+      color: white;
+      padding: 8px 15px;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="paper">
+    <h1>杨润涵</h1>
+    <div class="subtitle">福州大学 · 数字媒体技术 | 意向：技术创新组</div>
+
+    <p>
+      作为数字媒体技术专业的学生，我兼具<strong>理性的逻辑思维</strong>与<strong>感性的视觉审美</strong>。虽然我目前正处于前端开发的入门阶段，但我拥有丰富的项目统筹经验和极强的执行力。我希望能在技术创新组中，将视觉设计与代码落地结合，承担起团队协作与基础开发的职责。
+    </p>
+
+    <h2>核心经历与优势</h2>
+    <ul>
+      <li>
+        <strong>视觉落地与全栈流程 (揽月工作室)</strong><br>
+        连续三年参与新媒体和校刊工作。常常为了一个视频的转场或者排版纠结半天。这种对“好看”的执念，让我在做前端页面还原时，天生有一种不想将就的直觉。
+      </li>
+      <li>
+        <strong>项目统筹与协作推进 (院会主席/秘书处)</strong><br>
+        曾主导策划千人规模活动，具备极强的需求拆解、进度把控和现场 Debug 能力。在技术团队中，我能胜任类似“项目经理”的角色，跟进开发进度，并在出现突发 Bug 时迅速协调资源。
+      </li>
+    </ul>
+
+    <h2>目前的技能树</h2>
+    <p>
+      我不做虚假包装，目前的技术还处于起步阶段
+    </p>
+    <ul>
+      <li><span class="marker">前端基础</span>：熟练掌握 HTML 与 CSS 基础，能独立手写页面（本网页即为纯手写代码）。正在系统性学习 JavaScript 逻辑。</li>
+      <li><span class="marker">软技能</span>：具备优秀的沟通表达与演讲答辩能力（拥有模拟联合国经验），有极强的抗压能力与责任感。</li>
+    </ul>
+
+    <p>
+      技术创新组需要的是能解决实际问题的人。我有着扎实的综合素质和极强的学习内驱力，期待能获得一个在真实项目中打磨技术、与团队共同成长的机会。
+    </p>
+
+
+    <!-- 计划 -->
+    <button class="btn" id="clickBtn">查看我近期的开发计划</button>
+    <div id="secretText"></div>
+
+  </div>
+
+  <script>
+    var btn = document.getElementById("clickBtn");
+    var textBox = document.getElementById("secretText");
+    var plans = [
+      "1.完成 JS 基础语法与 DOM 操作的学习，并尝试写一个简单的待办事项 Web 应用。",
+      "2.了解 Vue/React 等现代前端框架的基本概念",
+      "3.学习使用 Figma",
+      "4.了解一下微信小程序的开发文档",
+      "5.选我选我！"
+    ];
+
+    var clickCount = 0;
+
+    btn.onclick = function () {
+      textBox.innerHTML = plans[clickCount];
+
+      btn.innerText = "下一项计划";
+
+      clickCount++;
+      if (clickCount >= plans.length) {
+        clickCount = 0;
+        btn.innerText = "重新查看计划";
+      }
+    };
+  </script>
+</body>
+
+</html>
